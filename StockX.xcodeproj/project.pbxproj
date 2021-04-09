@@ -7,15 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E905AE482620D53A004E5490 /* StockXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905AE472620D53A004E5490 /* StockXUITests.swift */; };
 		E90AD408261FDB3800A3EAED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90AD407261FDB3800A3EAED /* AppDelegate.swift */; };
 		E90AD40A261FDB3800A3EAED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90AD409261FDB3800A3EAED /* SceneDelegate.swift */; };
 		E90AD40C261FDB3800A3EAED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90AD40B261FDB3800A3EAED /* ViewController.swift */; };
 		E90AD40F261FDB3800A3EAED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90AD40D261FDB3800A3EAED /* Main.storyboard */; };
 		E90AD411261FDB3800A3EAED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90AD410261FDB3800A3EAED /* Assets.xcassets */; };
 		E90AD414261FDB3800A3EAED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90AD412261FDB3800A3EAED /* LaunchScreen.storyboard */; };
+		E91B372926201EDE00F6D069 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91B372826201EDE00F6D069 /* Network.swift */; };
+		E91B372E26201F1600F6D069 /* RedditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91B372D26201F1600F6D069 /* RedditViewModel.swift */; };
+		E91B37312620213C00F6D069 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91B37302620213C00F6D069 /* Post.swift */; };
+		E91B3734262024D200F6D069 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91B3733262024D200F6D069 /* PostCell.swift */; };
+		E91B37382620407300F6D069 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91B37372620407300F6D069 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E905AE4A2620D53A004E5490 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E90AD3FC261FDB3800A3EAED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E90AD403261FDB3800A3EAED;
+			remoteInfo = StockX;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		E905AE452620D53A004E5490 /* StockXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E905AE472620D53A004E5490 /* StockXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockXUITests.swift; sourceTree = "<group>"; };
+		E905AE492620D53A004E5490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90AD404261FDB3800A3EAED /* StockX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90AD407261FDB3800A3EAED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E90AD409261FDB3800A3EAED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,9 +43,21 @@
 		E90AD410261FDB3800A3EAED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E90AD413261FDB3800A3EAED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E90AD415261FDB3800A3EAED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E91B372826201EDE00F6D069 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		E91B372D26201F1600F6D069 /* RedditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditViewModel.swift; sourceTree = "<group>"; };
+		E91B37302620213C00F6D069 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E91B3733262024D200F6D069 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		E91B37372620407300F6D069 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E905AE422620D53A004E5490 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E90AD401261FDB3800A3EAED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +68,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E905AE3D2620CEE8004E5490 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E91B372826201EDE00F6D069 /* Network.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E905AE3E2620CEFD004E5490 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E91B37372620407300F6D069 /* WebViewController.swift */,
+				E90AD40B261FDB3800A3EAED /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E905AE462620D53A004E5490 /* StockXUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E905AE472620D53A004E5490 /* StockXUITests.swift */,
+				E905AE492620D53A004E5490 /* Info.plist */,
+			);
+			path = StockXUITests;
+			sourceTree = "<group>";
+		};
 		E90AD3FB261FDB3800A3EAED = {
 			isa = PBXGroup;
 			children = (
 				E90AD406261FDB3800A3EAED /* StockX */,
+				E905AE462620D53A004E5490 /* StockXUITests */,
 				E90AD405261FDB3800A3EAED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				E90AD404261FDB3800A3EAED /* StockX.app */,
+				E905AE452620D53A004E5490 /* StockXUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,9 +115,12 @@
 		E90AD406261FDB3800A3EAED /* StockX */ = {
 			isa = PBXGroup;
 			children = (
+				E905AE3E2620CEFD004E5490 /* ViewController */,
+				E905AE3D2620CEE8004E5490 /* API */,
+				E97971F02620509700A70AF5 /* ViewModel */,
+				E91B372B26201EED00F6D069 /* Model */,
 				E90AD407261FDB3800A3EAED /* AppDelegate.swift */,
 				E90AD409261FDB3800A3EAED /* SceneDelegate.swift */,
-				E90AD40B261FDB3800A3EAED /* ViewController.swift */,
 				E90AD40D261FDB3800A3EAED /* Main.storyboard */,
 				E90AD410261FDB3800A3EAED /* Assets.xcassets */,
 				E90AD412261FDB3800A3EAED /* LaunchScreen.storyboard */,
@@ -67,9 +129,44 @@
 			path = StockX;
 			sourceTree = "<group>";
 		};
+		E91B372B26201EED00F6D069 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E91B37302620213C00F6D069 /* Post.swift */,
+				E91B3733262024D200F6D069 /* PostCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E97971F02620509700A70AF5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E91B372D26201F1600F6D069 /* RedditViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E905AE442620D53A004E5490 /* StockXUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E905AE4C2620D53A004E5490 /* Build configuration list for PBXNativeTarget "StockXUITests" */;
+			buildPhases = (
+				E905AE412620D53A004E5490 /* Sources */,
+				E905AE422620D53A004E5490 /* Frameworks */,
+				E905AE432620D53A004E5490 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E905AE4B2620D53A004E5490 /* PBXTargetDependency */,
+			);
+			name = StockXUITests;
+			productName = StockXUITests;
+			productReference = E905AE452620D53A004E5490 /* StockXUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		E90AD403261FDB3800A3EAED /* StockX */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E90AD418261FDB3800A3EAED /* Build configuration list for PBXNativeTarget "StockX" */;
@@ -96,6 +193,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					E905AE442620D53A004E5490 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = E90AD403261FDB3800A3EAED;
+					};
 					E90AD403261FDB3800A3EAED = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -115,11 +216,19 @@
 			projectRoot = "";
 			targets = (
 				E90AD403261FDB3800A3EAED /* StockX */,
+				E905AE442620D53A004E5490 /* StockXUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E905AE432620D53A004E5490 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E90AD402261FDB3800A3EAED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,17 +242,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E905AE412620D53A004E5490 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E905AE482620D53A004E5490 /* StockXUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E90AD400261FDB3800A3EAED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91B372926201EDE00F6D069 /* Network.swift in Sources */,
+				E91B37382620407300F6D069 /* WebViewController.swift in Sources */,
 				E90AD40C261FDB3800A3EAED /* ViewController.swift in Sources */,
+				E91B372E26201F1600F6D069 /* RedditViewModel.swift in Sources */,
 				E90AD408261FDB3800A3EAED /* AppDelegate.swift in Sources */,
+				E91B3734262024D200F6D069 /* PostCell.swift in Sources */,
+				E91B37312620213C00F6D069 /* Post.swift in Sources */,
 				E90AD40A261FDB3800A3EAED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E905AE4B2620D53A004E5490 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E90AD403261FDB3800A3EAED /* StockX */;
+			targetProxy = E905AE4A2620D53A004E5490 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E90AD40D261FDB3800A3EAED /* Main.storyboard */ = {
@@ -165,6 +295,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E905AE4D2620D53A004E5490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StockXUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.sone.StockXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StockX;
+			};
+			name = Debug;
+		};
+		E905AE4E2620D53A004E5490 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StockXUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.sone.StockXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StockX;
+			};
+			name = Release;
+		};
 		E90AD416261FDB3800A3EAED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -287,6 +453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MEWA4DWA99;
 				INFOPLIST_FILE = StockX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MEWA4DWA99;
 				INFOPLIST_FILE = StockX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -320,6 +488,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E905AE4C2620D53A004E5490 /* Build configuration list for PBXNativeTarget "StockXUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E905AE4D2620D53A004E5490 /* Debug */,
+				E905AE4E2620D53A004E5490 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E90AD3FF261FDB3800A3EAED /* Build configuration list for PBXProject "StockX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
