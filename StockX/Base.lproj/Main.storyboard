@@ -110,17 +110,23 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="3re-YJ-Ng0">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b7Z-W7-7o5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="3re-YJ-Ng0" firstAttribute="centerY" secondItem="lA1-bR-fe9" secondAttribute="centerY" id="b1v-aa-SYe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lA1-bR-fe9" secondAttribute="trailing" constant="-20" id="bzp-Ql-NWj"/>
+                            <constraint firstItem="3re-YJ-Ng0" firstAttribute="centerX" secondItem="lA1-bR-fe9" secondAttribute="centerX" id="jNK-mU-VeD"/>
                             <constraint firstAttribute="bottomMargin" secondItem="lA1-bR-fe9" secondAttribute="bottom" constant="-34" id="k87-Sc-cFE"/>
                             <constraint firstItem="lA1-bR-fe9" firstAttribute="top" secondItem="Qe5-uj-ZUr" secondAttribute="topMargin" constant="-44" id="unT-fd-lAU"/>
                             <constraint firstItem="lA1-bR-fe9" firstAttribute="leading" secondItem="Qe5-uj-ZUr" secondAttribute="leadingMargin" constant="-20" id="xZq-Vo-Sce"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="3re-YJ-Ng0" id="vCe-zg-a4C"/>
                         <outlet property="webView" destination="lA1-bR-fe9" id="du0-Su-jLz"/>
                     </connections>
                 </viewController>
