@@ -49,9 +49,9 @@ class ViewController: UIViewController, RedditDelegate {
     
     @IBAction func searchButtonTapped(_ sender: Any) {
         guard let text = textField.text, !text.isEmpty else { return }
-        textField.resignFirstResponder()
-        loadRedditFeed(text)
+        searchSubReddit(text)
     }
+    
     /// Fetch Reddit's feed based on search bar text
     /// - Parameter text: subreddit / homepage = ""
     func loadRedditFeed(_ text:String = "") {
@@ -61,6 +61,12 @@ class ViewController: UIViewController, RedditDelegate {
                 self?.activityIndicator(isOn: false)
             }
         })
+    }
+    
+    func searchSubReddit(_ text:String) {
+        loadRedditFeed(text)
+        textField.text = nil
+        textField.resignFirstResponder()
     }
     
     /// Turns on and off the loader indicator for search bar
@@ -111,9 +117,7 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         guard let text = textField.text, !text.isEmpty else { return true }
-        loadRedditFeed(textField.text ?? "")
-        textField.text = nil
-        textField.resignFirstResponder()
+        searchSubReddit(text)
         return true
     }
 }
